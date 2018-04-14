@@ -3,21 +3,19 @@ const bot = new Discord.Client();
 
 //bot.login('NDMwODkzNTQ4MDc5MDIyMDgx.DbBl1w.7gnjeiHAcsXv3JsY_dwLyLX_Kjc');
 
+bot.on('serverNewMember',(x,y)=>{
+    (x === bot.servers.get('id',"SERVERID"))
+});
+
 bot.on('message', message => {
     if(message.content.startsWith('ping')){
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        message.channel.send(x.channels.get('name','general')," foi morto por um ratel de novo!"+y.mention()+"!");
+        message.channel.send(x + 'usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('ganhei')){
       message.channel.send('parabéns, seu merda!');
-    }
-});
-
-bot.on('serverNewMember',(x,y)=>{
-    if(x === bot.servers.get('id',"SERVERID")){
-        bot.sendMessage(x.channels.get('name','general'),"Bem vindo ao "+y.mention()+"!")
     }
 });
 
