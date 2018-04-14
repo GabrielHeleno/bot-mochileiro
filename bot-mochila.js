@@ -16,9 +16,11 @@ bot.on('message', message => {
 });
 
 bot.on('serverNewMember',(x,y)=>{
-    if(x === c.servers.get('id',"SERVERID"))
-        c.sendMessage(x.channels.get('name','general'),"Bem vindo ao "+y.mention()+"!")
-})
+    if(x === bot.servers.get('id',"SERVERID")){
+        bot.sendMessage(x.channels.get('name','general'),"Bem vindo ao "+y.mention()+"!")
+    }
+});
+
 bot.on('message', message => {
   if(message.content.startsWith('!news')){
       message.channel.send('https://newsapi.org/v2/everything?q=far%20cry&language=pt&sortBy=publishedAt&apiKey=f925e1a93a62459e8edf10242930e0a8');
