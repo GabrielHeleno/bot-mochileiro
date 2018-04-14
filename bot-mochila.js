@@ -7,12 +7,14 @@ bot.on('serverNewMember',(x,y)=>{
     (x === bot.servers.get('id',"SERVERID"))
 });
 
+client.users.get("name", "USERNAMEHERE").id;
+
 bot.on('message', message => {
     if(message.content.startsWith('ping')){
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        message.channel.send(x.mention()+'usuario morreu de novo pro ratel!');
+        message.channel.send(.mention(name)+'usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('ganhei')){
       message.channel.send('parabéns, seu merda!');
