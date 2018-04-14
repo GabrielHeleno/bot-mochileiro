@@ -8,7 +8,7 @@ bot.on('message', message => {
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        message.channel.send(user + ' foi morto por um ratel de novo!');
+        message.channel.send('O usuário foi morto por um ratel de novo!');
     }
     if(message.content.startsWith('ganhei')){
       message.channel.send('parabéns, seu merda!');
