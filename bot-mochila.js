@@ -10,7 +10,7 @@ bot.on('message', message => {
     if(message.content.startsWith('bang')){
         message.channel.send('usuario morreu de novo pro ratel!');
     }
-    if(message.content.startsWith('bang!')){
+    if(message.content.startsWith('beng')){
         message.channel.send('CORRE NEGADA! O ratel ainda tá vivo!');
     }
     if(message.content.startsWith('ganhei')){
