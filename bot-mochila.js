@@ -8,7 +8,7 @@ bot.on('message', message => {
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        message.channel.send('usuario morreu de novo pro ratel!');
+        message.channel.send('{/user}usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('beng')){
         message.channel.send('CORRE NEGADA O ratel ainda tá vivo!');
