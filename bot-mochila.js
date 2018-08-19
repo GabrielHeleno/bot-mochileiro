@@ -11,10 +11,11 @@ bot.on('message', message => {
         message.channel.send('usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('beng')){
-        message.channel.send('CORRE NEGADA! O ratel ainda tá vivo!');
+        message.channel.send('CORRE NEGADA O ratel ainda tá vivo!');
     }
     if(message.content.startsWith('ganhei')){
-      message.channel.send('parabéns, seu merda!');
+      var user = message.author.id;
+      message.channel.send(.user'parabéns, seu merda!');
     }
 });
 
