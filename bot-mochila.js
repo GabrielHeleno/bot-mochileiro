@@ -17,7 +17,7 @@ bot.on('message', message => {
       message.channel.send('parabéns, seu merda!');
     }
     if (message.content === 'avatar') {
-    message.channel.send(message.author.avatarURL);
+    message.channel.send(message.avatarURL);
   }
 });
 
