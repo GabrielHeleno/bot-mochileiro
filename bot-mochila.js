@@ -11,7 +11,7 @@ bot.on('message', message => {
         message.channel.send(message.author + 'usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('beng')){
-        message.channel.send(message.author.name+'CORRE NEGADA O ratel ainda tá vivo!');
+        message.channel.send(message.name+'CORRE NEGADA O ratel ainda tá vivo!');
     }
     if(message.content.startsWith('ganhei')){
       message.channel.send('parabéns, seu merda!');
