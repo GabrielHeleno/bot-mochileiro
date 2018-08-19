@@ -8,11 +8,11 @@ bot.on('message', message => {
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        const autor = message.channel.send.author;
+        const autor = message.author.send;
         message.channel.send(autor + 'usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('beng')){
-        message.channel.send(.author+'CORRE NEGADA O ratel ainda tá vivo!');
+        message.channel.send(message.author+'CORRE NEGADA O ratel ainda tá vivo!');
     }
     if(message.content.startsWith('ganhei')){
       message.channel.send('parabéns, seu merda!');
