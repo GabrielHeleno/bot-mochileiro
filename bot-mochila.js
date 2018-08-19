@@ -8,7 +8,7 @@ bot.on('message', message => {
         message.channel.send('pong');
     }
     if(message.content.startsWith('bang')){
-        var autor = message.author;
+        var autor = message.name;
         message.channel.send('autor' + autor + 'usuario morreu de novo pro ratel!');
     }
     if(message.content.startsWith('beng')){
